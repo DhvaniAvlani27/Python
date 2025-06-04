@@ -1,7 +1,5 @@
-numbers = [1, 2, 3, 4, 5, 6]
-even_numbers = []
+user_input = input("Enter numbers separated by space: ")
+numbers = list(map(int, user_input.split()))
 for num in numbers:
     if num % 2 == 0:
-        even_numbers.append(num)
-
-print("Even numbers:", even_numbers)
+        print(num)
